@@ -1,6 +1,6 @@
 # A few comments
 
-The focus is heavily made on the architecture of the project with a modular, scalable code base. The strongest point of it is the usage of an event system based on ScriptableObjects, rather than singletons, which are used only once, for the modal window.
+The focus is heavily made on the architecture of the project with a modular, scalable code base. The strongest point of it is the usage of an event system based on ScriptableObjects, rather than the singleton pattern, which is used only once, for the modal window.
 
 This approach is extensively covered in the Unite talks by Richard Fine and Ryan Hipple, and this project is the result of all the work and research for over the years that I’ve made to get to this formula, where I take advantage of the dual nature of ScriptableObjects (both data and logic containers).
 These are the links to the talks:

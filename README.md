@@ -11,3 +11,7 @@ https://www.youtube.com/watch?v=raQ3iHhE_Kk&t=3264s&ab_channel=Unity
 
 A system of additive scenes is also used, where the code is all decoupled between scenes and separated by its functionality.
 Those are the main points of this extensible architecture which I have setup in one day of gathering systems and implementing them in a cohesive project, with in this case no external assets at all.
+
+<i>Note: 
+<br> 
+I am aware that a binary save system is much more stronger than a json save system, but for debugging purposes I went for json at first and I just didn`t have time to switch to a binary implementation as I rather prefered to focus on the quality of the code structure.</i>

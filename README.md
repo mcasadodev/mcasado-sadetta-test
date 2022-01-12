@@ -4,7 +4,9 @@ The focus is heavily made on the architecture of the project with a modular, sca
 
 This approach is extensively covered in the Unite talks by Richard Fine and Ryan Hipple, and this project is the result of all the work and research for over the years that I’ve made to get to this formula, where I take advantage of the dual nature of ScriptableObjects (both data and logic containers).
 These are the links to the talks:
+<br>
 https://www.youtube.com/watch?v=6vmRwLYWNRo&t=74s&ab_channel=Unity
+<br>
 https://www.youtube.com/watch?v=raQ3iHhE_Kk&t=3264s&ab_channel=Unity
 
 A system of additive scenes is also used, where the code is all decoupled between scenes and separated by its functionality.

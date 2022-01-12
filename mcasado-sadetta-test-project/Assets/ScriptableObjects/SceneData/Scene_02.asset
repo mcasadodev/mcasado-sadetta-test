@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db63739a6674d74e8e232347422172f, type: 3}
+  m_Name: Scene_02
+  m_EditorClassIdentifier: 
+  sceneAsset: {fileID: 102900000, guid: 1cb9ffffe15327b42894b3a153eca1aa, type: 3}
+  scenePath: Assets/Scenes/Scene_02.unity
+  shortDescription: 
+  music: {fileID: 8300000, guid: 544ed3737343a2e469b9767d2deec067, type: 3}
+  enemiesCount: 0

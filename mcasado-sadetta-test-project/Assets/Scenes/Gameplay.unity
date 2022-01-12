@@ -953,13 +953,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1048869999}
     - target: {fileID: 2182448941190309908, guid: 2af68f4e6b94140cfbcdee05fcc28ce3, type: 3}
-      propertyPath: pointsText
+      propertyPath: scoreText
       value: 
       objectReference: {fileID: 928396863}
-    - target: {fileID: 2182448941190309908, guid: 2af68f4e6b94140cfbcdee05fcc28ce3, type: 3}
-      propertyPath: modalWindowPrefab
-      value: 
-      objectReference: {fileID: 3960884068306531132, guid: c598e875c60040e42a7c02c405325cb5, type: 3}
     - target: {fileID: 2182448941190309909, guid: 2af68f4e6b94140cfbcdee05fcc28ce3, type: 3}
       propertyPath: m_RootOrder
       value: 0

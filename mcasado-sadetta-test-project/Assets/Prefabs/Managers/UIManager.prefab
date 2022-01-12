@@ -43,8 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5eb1a5a891704b35b2ad0529d003d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: {fileID: 11400000, guid: 383a5b282cf944e47acbdcf2ae19d437, type: 2}
+  score: {fileID: 11400000, guid: 383a5b282cf944e47acbdcf2ae19d437, type: 2}
   _onOpenCanvas: {fileID: 11400000, guid: f6d7ca9ab9da48a4bb7c360d3b3bfe4c, type: 2}
   canvas: {fileID: 0}
-  pointsText: {fileID: 0}
-  modalWindowPrefab: {fileID: 8396449558776870610, guid: 903d4ec6949c65844b3a6a8749312f7f, type: 3}
+  scoreText: {fileID: 0}
+  modalWindowPrefab: {fileID: 3960884068306531132, guid: c598e875c60040e42a7c02c405325cb5, type: 3}

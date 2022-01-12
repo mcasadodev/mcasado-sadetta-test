@@ -9,7 +9,7 @@ namespace MCasado.Scoreboards
 
     public class ScoreBoard : MonoBehaviour
     {
-        [SerializeField] private IntEventChannelSO _points = default;
+        [SerializeField] private IntEventChannelSO _score = default;
         [SerializeField] private int maxScoreboardEntries = 5;
         [SerializeField] private Transform highscoresHolderTransform = null;
         [SerializeField] private GameObject scoreboardEntryObject = null;
@@ -36,21 +36,21 @@ namespace MCasado.Scoreboards
 
         private void OnEnable()
         {
-            if (_points != null)
+            if (_score != null)
             {
-                _points.OnEventRaised += SetPlayerScore;
+                _score.OnEventRaised += SetPlayerScore;
             }
         }
         private void OnDisable()
         {
-            if (_points != null)
+            if (_score != null)
             {
-                _points.OnEventRaised -= SetPlayerScore;
+                _score.OnEventRaised -= SetPlayerScore;
             }
         }
-        private void SetPlayerScore(int points)
+        private void SetPlayerScore(int score)
         {
-            testEntryData.entryScore = points;
+            testEntryData.entryScore = score;
         }
 
         public void AddEntry(ScoreBoardEntryData scoreBoardEntryData)

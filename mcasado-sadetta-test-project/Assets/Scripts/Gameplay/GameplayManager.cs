@@ -11,23 +11,23 @@ namespace MCasado.Gameplay
     {
         public BoolEventChannelSO _onOpenCanvas;
         public BoolEventChannelSO _onOpenCanvasLevel;
-        [SerializeField] private VoidEventChannelSO onGameOver = default;
-        [SerializeField] private IntEventChannelSO _points = default;
-        [SerializeField] private IntEventChannelSO _onAddPoint = default;
+        [SerializeField] private VoidEventChannelSO _onGameOver = default;
+        [SerializeField] private IntEventChannelSO _score = default;
+        [SerializeField] private IntEventChannelSO _onAddScore = default;
         private ScoreBoard scoreBoard = default;
 
-        public int points = 0;
+        public int score = 0;
 
         private void OnEnable()
         {
-            if (onGameOver != null)
+            if (_onGameOver != null)
             {
-                onGameOver.OnEventRaised += GameIsOver;
+                _onGameOver.OnEventRaised += OnGameOver;
             }
 
-            if (_onAddPoint != null)
+            if (_onAddScore != null)
             {
-                _onAddPoint.OnEventRaised += OnAddPoint;
+                _onAddScore.OnEventRaised += OnAddScore;
             }
 
             scoreBoard = GameObject.FindObjectOfType<ScoreBoard>();
@@ -35,13 +35,13 @@ namespace MCasado.Gameplay
 
         private void OnDisable()
         {
-            if (onGameOver != null)
+            if (_onGameOver != null)
             {
-                onGameOver.OnEventRaised -= GameIsOver;
+                _onGameOver.OnEventRaised -= OnGameOver;
             }
-            if (_onAddPoint != null)
+            if (_onAddScore != null)
             {
-                _onAddPoint.OnEventRaised -= OnAddPoint;
+                _onAddScore.OnEventRaised -= OnAddScore;
             }
         }
 
@@ -50,7 +50,7 @@ namespace MCasado.Gameplay
             StartCoroutine(WaitForStart());
         }
 
-        private void GameIsOver()
+        private void OnGameOver()
         {
             GetComponent<AudioCue>().PlayAudioCue();
             scoreBoard.AddTestEntry();
@@ -58,10 +58,10 @@ namespace MCasado.Gameplay
             _onOpenCanvas.RaiseEvent(true);
         }
 
-        private void OnAddPoint(int point)
+        private void OnAddScore(int scoreAdd)
         {
-            points += point;
-            _points.RaiseEvent(points);
+            score += scoreAdd;
+            _score.RaiseEvent(score);
         }
 
         private void Update()
@@ -73,7 +73,7 @@ namespace MCasado.Gameplay
         private IEnumerator WaitForStart()
         {
             GameStateManager.Instance.SetState(GameState.Paused);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1);
             GameStateManager.Instance.SetState(GameState.Gameplay);
         }
     }

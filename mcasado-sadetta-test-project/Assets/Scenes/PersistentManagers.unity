@@ -601,7 +601,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3845877873755819562, guid: ff36e7f2f7928454dae0a4d9af31e076, type: 3}
   m_PrefabInstance: {fileID: 3845877872784178022}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3845877872784178023}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6b928d1d6f59854499ed82bdeef2305, type: 3}
@@ -800,21 +800,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3845877873755819562, guid: ff36e7f2f7928454dae0a4d9af31e076, type: 3}
-      propertyPath: _loadMenu
-      value: 
-      objectReference: {fileID: 11400000, guid: 00e3063edc5902e40832ea618644c597, type: 2}
-    - target: {fileID: 3845877873755819562, guid: ff36e7f2f7928454dae0a4d9af31e076, type: 3}
-      propertyPath: _gameplayScene
-      value: 
-      objectReference: {fileID: 11400000, guid: 0399d9a38a41d0747a6a3c339a1fd8c4, type: 2}
-    - target: {fileID: 3845877873755819562, guid: ff36e7f2f7928454dae0a4d9af31e076, type: 3}
       propertyPath: fadeCanvasGroup
       value: 
       objectReference: {fileID: 580415015}
-    - target: {fileID: 3845877873755819562, guid: ff36e7f2f7928454dae0a4d9af31e076, type: 3}
-      propertyPath: _persistentManagersScene
-      value: 
-      objectReference: {fileID: 11400000, guid: 48a8516ec26d1554890023ed583790ec, type: 2}
     - target: {fileID: 3845877873755819563, guid: ff36e7f2f7928454dae0a4d9af31e076, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -865,21 +853,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff36e7f2f7928454dae0a4d9af31e076, type: 3}
---- !u!1 &3845877872784178023 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3845877873755819565, guid: ff36e7f2f7928454dae0a4d9af31e076, type: 3}
-  m_PrefabInstance: {fileID: 3845877872784178022}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3845877872784178024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3845877872784178023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4193b838f98861428b6a69e6156a412, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onQuitGame: {fileID: 11400000, guid: d570e16f713770a4a94310999866e0e0, type: 2}

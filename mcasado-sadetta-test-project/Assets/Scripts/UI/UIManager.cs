@@ -10,19 +10,19 @@ namespace MCasado.UI
 
     public class UIManager : MonoBehaviour
     {
-        public IntEventChannelSO points;
+        public IntEventChannelSO score;
         public BoolEventChannelSO _onOpenCanvas;
 
         public GameObject canvas;
-        public TextMeshProUGUI pointsText;
+        public TextMeshProUGUI scoreText;
 
         public GameObject modalWindowPrefab;
 
         private void OnEnable()
         {
-            if (points != null)
+            if (score != null)
             {
-                points.OnEventRaised += UpdatePoints;
+                score.OnEventRaised += Updatescore;
             }
             if (_onOpenCanvas != null)
             {
@@ -31,9 +31,9 @@ namespace MCasado.UI
         }
         private void OnDisable()
         {
-            if (points != null)
+            if (score != null)
             {
-                points.OnEventRaised -= UpdatePoints;
+                score.OnEventRaised -= Updatescore;
             }
             if (_onOpenCanvas != null)
             {
@@ -47,9 +47,9 @@ namespace MCasado.UI
             ModalWindow.transform.SetParent(canvas.transform.parent.transform, false);
         }
 
-        private void UpdatePoints(int points)
+        private void Updatescore(int score)
         {
-            pointsText.text = points.ToString();
+            scoreText.text = score.ToString();
         }
 
         private void OpenCanvas(bool state)

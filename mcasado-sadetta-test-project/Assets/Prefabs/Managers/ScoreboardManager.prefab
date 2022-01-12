@@ -43,8 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6730f80184df53440868d5faf58cc0c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _points: {fileID: 11400000, guid: 383a5b282cf944e47acbdcf2ae19d437, type: 2}
-  maxScoreboardEntries: 3
+  _score: {fileID: 11400000, guid: 383a5b282cf944e47acbdcf2ae19d437, type: 2}
+  maxScoreboardEntries: 10
   highscoresHolderTransform: {fileID: 0}
   scoreboardEntryObject: {fileID: 2107642242409205757, guid: 2a53e3504016e724c982283d01ee626c, type: 3}
   testEntryData:
